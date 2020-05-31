@@ -1,0 +1,31 @@
+current directory: /Users/naoki/environment/taskleaf2/vendor/cache/ruby/2.6.0/gems/hpricot-0.8.6/ext/hpricot_scan
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /Library/Ruby/Site/2.6.0 -r ./siteconf20200531-14645-12h3l04.rb extconf.rb
+checking for main() in -lc... yes
+creating Makefile
+
+current directory: /Users/naoki/environment/taskleaf2/vendor/cache/ruby/2.6.0/gems/hpricot-0.8.6/ext/hpricot_scan
+make "DESTDIR=" clean
+
+current directory: /Users/naoki/environment/taskleaf2/vendor/cache/ruby/2.6.0/gems/hpricot-0.8.6/ext/hpricot_scan
+make "DESTDIR="
+compiling hpricot_css.c
+hpricot_css.rl:87:14: warning: field precision should have type 'int', but argument has type 'long' [-Wformat]
+        {te = p+1;{ FILTERAUTO(); }}
+                    ^~~~~~~~~~~~
+hpricot_css.rl:15:20: note: expanded from macro 'FILTERAUTO'
+  sprintf(filt, "%.*s", te - ts, ts); \
+                 ~~^~   ~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h:47:56: note: expanded from macro 'sprintf'
+  __builtin___sprintf_chk (str, 0, __darwin_obsz(str), __VA_ARGS__)
+                                                       ^~~~~~~~~~~
+hpricot_css.c:3407:9: warning: comparison between pointer and integer ('char *' and 'int') [-Wpointer-integer-compare]
+        if ( p == eof )
+             ~ ^  ~~~
+2 warnings generated.
+compiling hpricot_scan.c
+linking shared-object hpricot_scan.bundle
+ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.Internal.sdk/usr/local/lib'
+
+current directory: /Users/naoki/environment/taskleaf2/vendor/cache/ruby/2.6.0/gems/hpricot-0.8.6/ext/hpricot_scan
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 hpricot_scan.bundle ./.gem.20200531-14645-1g327em
