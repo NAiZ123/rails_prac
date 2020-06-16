@@ -65,6 +65,7 @@ describe 'タスク管理機能', type: :system do
       end
     end
 
+
     context '新規作成画面で名称を入力しなかったとき' do
       let(:task_name) { '' }
 
